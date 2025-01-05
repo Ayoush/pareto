@@ -1,4 +1,4 @@
-### **1. Core Concepts**
+### **Core Concepts**
 
 These are the foundation of JavaScript and essential for any project.
 
@@ -102,13 +102,81 @@ These are the foundation of JavaScript and essential for any project.
      ```
 
 - Arrow functions: Syntax and `this` behavior.
-	- 
+	- `this` always refers to some object. What this object refers to will vary based on what and where this keyword is being called.
+	- `this` is a keyword, not a variable so it can't be changed or reassigned.
+	- If we call `this` by itself meaning not within function, object or whatever then it refers to global object.
+	- If we call `this` from object then it refers to object itself.
+	- In case of regular function it will again refer to `global Window`.
+	- Inside a Constructor function or Class, `this` refers to the object.
+	- In case of EventListners, `this` refers to the element that receives the event.
+	```js
+		console.log(this); // Browser: window, Node.js: {}
+		
+		function regularFunction() { 
+			console.log(this); 
+		} 
+		regularFunction(); // Non-strict: window (browser), Strict: undefined
+		
+		const obj = { 
+			name: "JavaScript", 
+			greet() { 
+				console.log(this.name); 
+				}, 
+			}; 
+		obj.greet(); // "JavaScript"
+		
+		function Person(name) { 
+			this.name = name; 
+		} 
+		const person = new Person("John"); console.log(person.name); // "John"
+		
+		const button = document.querySelector("button");
+		button.addEventListener("click", function () { console.log(this); // The button element });
+		
+		setTimeout(function () { console.log(this); // Global object (window in browsers) }, 1000);
+    ```
+	- `Arrow Function` is nothing but short format of normal function.
+	- The main difference comes on how the `this` keyword when associated with `Arrow function` behaves.
+	- Arrow functions do not have their own `this`. Instead, they inherit `this` from the **surrounding lexical scope**.
+	- Arrow functions cannot be used with the `new` keyword.
+	- In a regular function, `this` is dynamically determined based on **how the function is called**.
+	- In an arrow function, `this` is lexically bound. It inherits `this` from the surrounding scope where it is defined, not where it is called.
+	```js
+		const obj = {
+		  name: "JavaScript",
+		  greet: () => {
+			console.log(this.name); // Arrow functions inherit from outer scope
+		  },
+		};
+		obj.greet(); // undefined (Inherits `this` from global scope)
 
+		button.addEventListener("click", () => {
+			console.log(this); // Depends on outer scope (likely `window`) 
+		});
+
+		setTimeout(() => { 
+			console.log(this); // Lexical scope 
+		}, 1000);		
+	```
 
 - Closures: How they work and practical use cases.
+	- `Closures` are functions that remembers the environment in which it was created.
+	-  Before understanding closures we have to have some basic understanding of [[Execution Context]]
+	- In javascript, functions are executed in context of the scope in which they were defined.
+	- When function is created, it captures the environment at the time of definition and even if the outer function ended inner function retains the access as javascript keep them as long as they are referenced.
+	```js
+	function outerFunction(outerVariable) {
+		return function innerFunction(innerVariable) {
+	    console.log(`Outer: ${outerVariable}, Inner: ${innerVariable}`);
+	  };
+	}
+
+	const closureFunc = outerFunction("outside");
+	closureFunc("inside");
+	// Output: Outer: outside, Inner: inside
+	```
 
 #### **c. Event Loop and Asynchronous JavaScript (30 mins)**
-
 - Understand the **call stack**, **event loop**, and **task queue**.
 - Promises: `then`, `catch`, `finally`.
 - `async/await`: Syntax and handling errors.
