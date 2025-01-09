@@ -75,7 +75,7 @@ These are the foundation of JavaScript and essential for any project.
 		  }
 		}
     ```
-    - Different variable type are hoisted differently as discussed, `var` gives undefined, `let` gives reference error. It does get hoisted but not initialised. Compiler knows about the variable but not the value. So these are only accessible after the line they are initialised and this is what we call `Temporal Dead Zone`
+    - Different variable type are hoisted differently as discussed, `var` gives undefined, `let` gives reference error. It does get hoisted but not initialised. Compiler knows about the variable but not the value. So these are only accessible after the line they are initialised and this is what we call **`Temporal Dead Zone`**
 	- Same is the case with `const`
 
 
@@ -178,6 +178,26 @@ These are the foundation of JavaScript and essential for any project.
 
 #### **c. Event Loop and Asynchronous JavaScript (30 mins)**
 - Understand the **call stack**, **event loop**, and **task queue**.
+	- `call stack` is a data structure which operates on LIFO. It manages function calling
+	```js
+	function firstFunction(){
+	  throw new Error('Stack Trace Error');
+	}
+
+	function secondFunction(){
+	  firstFunction();
+	}
+
+	function thirdFunction(){
+	  secondFunction();
+	}
+
+	thirdFunction();
+	```
+	 ![[callstackoutput.png]]
+	 - Its single threaded and synchronous.
+	 - A function invocation creates a stack frame that occupies a temporary memory.
+	 - For `event loop`, `task queue` and `microtask queue` refer to this [[Event Loop and Task Queues]]
 - Promises: `then`, `catch`, `finally`.
 - `async/await`: Syntax and handling errors.
 - Example: Write a simple `async/await` function to fetch data using `fetch`.
