@@ -199,5 +199,6 @@ These are the foundation of JavaScript and essential for any project.
 	 - A function invocation creates a stack frame that occupies a temporary memory.
 	 - For `event loop`, `task queue` and `microtask queue` refer to this [[Event Loop and Task Queues]]
 - Promises: `then`, `catch`, `finally`.
+	- Its a big topic hence explaining it in a separate [[Promises and then, catch, finally]]
 - `async/await`: Syntax and handling errors.
 - Example: Write a simple `async/await` function to fetch data using `fetch`.
