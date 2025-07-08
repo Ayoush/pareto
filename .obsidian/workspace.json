@@ -1,0 +1,202 @@
+{
+  "main": {
+    "id": "f317a8d1f9e52d96",
+    "type": "split",
+    "children": [
+      {
+        "id": "a8a13d1e83dd3369",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e95346e40e72042a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "pareto/01-foundations/typescript/notes/Basic.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Basic"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1ff7305533bab287",
+    "type": "split",
+    "children": [
+      {
+        "id": "44003347ab92b2cb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7886c15ade536cef",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "69fe71512580425f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "path:\"pareto/\" ",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "0111278a7dfe1132",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "8076dc21aa576c89",
+    "type": "split",
+    "children": [
+      {
+        "id": "dce7436300338ac2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "60b2c6f255c7efea",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "JavaScript/Javascript Advance Concepts (80 - 20).md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Javascript Advance Concepts (80 - 20)"
+            }
+          },
+          {
+            "id": "7728a7fe3ebfff38",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "JavaScript/Javascript Advance Concepts (80 - 20).md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Javascript Advance Concepts (80 - 20)"
+            }
+          },
+          {
+            "id": "dbea6f7b575597a3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "64cffa5ff892f50d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "JavaScript/Javascript Advance Concepts (80 - 20).md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Javascript Advance Concepts (80 - 20)"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "publish:Publish changes...": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "7886c15ade536cef",
+  "lastOpenFiles": [
+    "pareto/dsa/Basic Maths.md",
+    "pareto/01-foundations/javascript/notes/Sub Topics/Event Loop and Task Queues.md",
+    "pareto/01-foundations/javascript/notes/Javascript Advance Concepts (80 - 20).md",
+    "pareto/01-foundations/javascript/notes/Javascript Core Concepts (80-20).md",
+    "pareto/01-foundations/javascript/notes/Javascript Practical Concepts (80 - 20).md",
+    "pareto/01-foundations/javascript/notes/Sub Topics/Execution Context.md",
+    "pareto/01-foundations/typescript/notes/Basic.md",
+    "pareto/01-foundations/typescript/notes",
+    "pareto/01-foundations/typescript",
+    "pareto/dsa",
+    "README.md",
+    "pareto/01-foundations/javascript/notes",
+    "pareto/01-foundations",
+    "pareto",
+    "pareto/01-foundations/javascript/notes/images/Creation Phase.png",
+    "pareto/01-foundations/javascript/notes/images/callstackoutput.png",
+    "Untitled.canvas",
+    "AWS/images/Pasted image 20250306041633.png",
+    "AWS/Getting Started.md",
+    "AWS/IAM/IAM- users & groups.md",
+    "pareto/01-foundations/javascript/notes/images/execution phase.png",
+    "pareto/01-foundations/javascript/notes/Sub Topics/Promises and then, catch, finally.md",
+    "pareto/01-foundations/javascript/notes/images/function execution context.png",
+    "AWS/images",
+    "AWS/IAM",
+    "2025-02-27.md",
+    "AWS"
+  ]
+}
